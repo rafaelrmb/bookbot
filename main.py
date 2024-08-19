@@ -19,7 +19,7 @@ def count_total_chars(text):
   lowercase_text = text.lower()
 
   for char in lowercase_text:
-      if char != ' ':
+      if char.isalpha():
         if char in chars_dict.keys():
           chars_dict[char] += 1
         else: 
